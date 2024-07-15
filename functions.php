@@ -1,5 +1,10 @@
 <?php
 
+
+
+require_once get_template_directory() . '/inc/custom-post.php';
+
+
 add_theme_support('title-tag');
 
 add_theme_support('custom-header');
