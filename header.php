@@ -32,3 +32,58 @@
     <title>Shamima Haque</title>
     <?php wp_head(); ?>
     </head>
+
+    <body <?php body_class();?>>
+
+<!--Preloader Starts Here-->
+<!-- <div id="loading"></div> -->
+<!--Preloader Ends Here-->
+
+<!--Header Starts Here-->
+<header>
+    <div class="container main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo" href="<?php home_url('/');?>">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+<!--       <h2>Shamima Haque</h2>-->
+        </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <?php wp_nav_menu(array(
+	'theme_location'=>'header_menu',
+    'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+    'container'       => 'div',
+    'container_class' => 'collapse navbar-collapse menu',
+    'container_id'    => 'navbarSupportedContent',
+    'menu_class'      => 'navbar-nav ml-auto',
+    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+    'walker'          => new WP_Bootstrap_Navwalker(),
+	));?>
+
+  <!-- <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Services</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="">Portfolio</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="">Contact</a>
+      </li>
+    </ul>
+  </div> -->
+</nav>
+    </div>
+</header>
+<!--Header Ends Here-->
+

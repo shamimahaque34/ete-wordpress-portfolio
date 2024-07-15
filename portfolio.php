@@ -5,47 +5,8 @@
 				Template Name:Portfolio Page
 			*/
 		?>
-<body onload="myFunction()">
 
-<!--Preloader Starts Here-->
-<!-- <div id="loading"></div> -->
-<!--Preloader Ends Here-->
 
-<!--Header Starts Here-->
-<header>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand logo" href="index.html">
-            <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo">
-        </a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    </div>
-</header>
-<!--Header Ends Here-->
 
 <!--Page Title Starts Here-->
     <div class="container section-padding">
