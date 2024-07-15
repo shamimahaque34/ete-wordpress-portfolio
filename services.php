@@ -1,9 +1,15 @@
 <?php get_header(); ?>
 
+<?php
+			/*
+				Template Name:Services Page
+			*/
+		?>
+
 <body onload="myFunction()">
 
     <!--Preloader Starts Here-->
-    <div id="loading"></div>
+    <!-- <div id="loading"></div> -->
     <!--Preloader Ends Here-->
 
     <!--Header Starts Here-->
@@ -11,7 +17,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand logo" href="index.html">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +149,7 @@
                 <div class="col-12 col-md-6 content-preview">
                     <div class="d-flex justify-content-end">
                         <div class="content-preview-thumb">
-                        <img src="images/project-idea.png" alt="" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri();?>/images/project-idea.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>

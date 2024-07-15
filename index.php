@@ -1,5 +1,11 @@
 
 <?php get_header(); ?>
+
+<?php
+	/*
+	   Template Name:Home Page
+   */
+		?>
 <body <?php body_class();?>>
 
 <!--Preloader Starts Here-->
@@ -10,8 +16,8 @@
 <header>
     <div class="container main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand logo" href="">
-        <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo">
+        <a class="navbar-brand logo" href="<?php home_url('/');?>">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 <!--       <h2>Shamima Haque</h2>-->
         </a>
 
@@ -19,7 +25,18 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+  <?php wp_nav_menu(array(
+	'theme_location'=>'header_menu',
+    'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+    'container'       => 'div',
+    'container_class' => 'collapse navbar-collapse menu',
+    'container_id'    => 'navbarSupportedContent',
+    'menu_class'      => 'navbar-nav ml-auto',
+    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+    'walker'          => new WP_Bootstrap_Navwalker(),
+	));?>
+
+  <!-- <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="">Home</a>
@@ -37,7 +54,7 @@
         <a class="nav-link" href="">Contact</a>
       </li>
     </ul>
-  </div>
+  </div> -->
 </nav>
     </div>
 </header>

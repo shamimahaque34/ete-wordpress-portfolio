@@ -1,8 +1,14 @@
 <?php get_header(); ?>
 
+<?php
+			/*
+				Template Name:About Page
+			*/
+		?>
+
   <body onload="myFunction()">
     <!--Preloader Starts Here-->
-    <div id="loading"></div>
+    <!-- <div id="loading"></div> -->
     <!--Preloader Ends Here-->
 
     <!--Header Starts Here-->
@@ -10,7 +16,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand logo" href="index.html">
-            <img src="images/logo.png" alt="logo" />
+            <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo" />
           </a>
 
           <button
@@ -66,7 +72,7 @@
     <div class="container about">
       <div class="row">
         <div class="col-md-4 about-img">
-          <img src="images/profile.jpeg" alt="profile" class="img-fluid" />
+          <img src="<?php echo get_template_directory_uri();?>/images/profile.jpeg" alt="profile" class="img-fluid" />
         </div>
 
         <div class="col-md-8 about-content">
@@ -131,7 +137,7 @@
                 able to achieve compatibility targets.
               </p>
 
-              <a href="images/resume.pdf" target="_blank">
+              <a href="<?php echo get_template_directory_uri();?>/images/resume.pdf" target="_blank">
                 <button type="button" class="main-button">My Resume</button>
               </a>
 

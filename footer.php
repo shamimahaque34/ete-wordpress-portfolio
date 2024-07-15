@@ -18,10 +18,10 @@
               <h3>Quick Links</h3>
               <div class="links">
                 <ul>
-                  <li><a href="about.html">About Me</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="contact.html">Contact Me</a></li>
+                  <li><a href="">About Me</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Contact Me</a></li>
                 </ul>
               </div>
             </div>
@@ -98,12 +98,12 @@
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
 <!-- <script src="js/jquery.min.js"></script> -->
-<script src="js/owl.carousel.min.js"></script>
+<!-- <script src="js/owl.carousel.min.js"></script>
 <script src="js/typed.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/custom.js"></script> -->
 
 <?php wp_footer(); ?>
 </body>

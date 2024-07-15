@@ -2,6 +2,28 @@
 
 add_theme_support('title-tag');
 
+add_theme_support('custom-header');
+
+register_nav_menus(array(
+
+	'header_menu'=>'This is our Header Menu',
+	'footer_menu'=>'This is our Fotter Menu',
+
+));
+
+
+
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+
+
 function add_css_js(){
     wp_enqueue_style('style',get_template_directory_uri().'/css/style.css',array(),'1.0.0','all');
 
@@ -18,6 +40,8 @@ function add_css_js(){
     wp_enqueue_style('responsive',get_template_directory_uri().'/css/responsive.css',array(),'1.0.0','all');
 
 
+    // wp_enqueue_script('jquery',get_template_directory_uri().'/js/jquery-3.3.1.slim.min.js',array(),'1.0.0',true);
+    // wp_enqueue_script('jquery',get_template_directory_uri().'/js/jquery.min.js',array(),'1.0.0',true);
     wp_enqueue_script('bootstrap',get_template_directory_uri().'/js/bootstrap.min.js',array('jquery'),'1.0.0',true);
 
     wp_enqueue_script('custom',get_template_directory_uri().'/js/custom.js',array('jquery'),'1.0.0',true);

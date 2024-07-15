@@ -1,8 +1,14 @@
 <?php get_header(); ?>
+
+<?php
+			/*
+				Template Name:Portfolio Page
+			*/
+		?>
 <body onload="myFunction()">
 
 <!--Preloader Starts Here-->
-<div id="loading"></div>
+<!-- <div id="loading"></div> -->
 <!--Preloader Ends Here-->
 
 <!--Header Starts Here-->
@@ -10,7 +16,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand logo" href="index.html">
-            <img src="images/logo.png" alt="logo">
+            <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo">
         </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -194,7 +200,7 @@
             <div id="testimonial-slider" class="owl-carousel">
                 <div class="testimonial">
                     <div class="client">
-                        <img src="images/profile.jpeg" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/images/profile.jpeg" alt="">
                     </div>
                     <div class="testimonial-content">
                         <p class="description">
@@ -212,7 +218,7 @@
 
                 <div class="testimonial">
                     <div class="client">
-                        <img src="images/profile.jpeg"b alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/images/profile.jpeg"b alt="">
                     </div>
                     <div class="testimonial-content">
                         <p class="description">
@@ -230,7 +236,7 @@
 
                 <div class="testimonial">
                     <div class="client">
-                        <img src="images/profile.jpeg"b alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/images/profile.jpeg"b alt="">
                     </div>
                     <div class="testimonial-content">
                         <p class="description">

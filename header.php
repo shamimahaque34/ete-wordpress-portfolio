@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="<?php language_attributes();?>" class="no-js">
 
 <head>
     <style>
@@ -23,8 +23,8 @@
 
 
     <!--    Favicon link Start Here-->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="<?php echo get_template_directory_uri();?>/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/favicon.png" type="image/x-icon" />
     <!--    Favicon link End Here-->
 
 
