@@ -22,74 +22,29 @@
     <!--Services Starts Here-->
     <div class="container services-section-padding">
         <div class="row">
-            <div class="col-md-4">
-                <div class="single-service">
-                    <div class="service-icon">
-                        <i class="fa fa-laptop"></i>
-                    </div>
-                    <h4>Web Design</h4>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                    <div class="service-hover"></div>
-                </div>
-            </div>
-
-              <div class="col-md-4">
-                <div class="single-service">
-                    <div class="service-icon">
-                       <i class="fas fa-bug"></i>
-                    </div>
-                    <h4>Bug Fixing</h4>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                    <div class="service-hover"></div>
-                </div>
-            </div>
+            <?php  $options = get_option( 'my_framework' ); 
+            $hello_values = $options['opt-group-1'];
+            
+                foreach($hello_values as $hello_key1=> $hello){ ?>
 
             <div class="col-md-4">
                 <div class="single-service">
                     <div class="service-icon">
-                        <i class="fas fa-life-ring"></i>
+                        <i class="<?php echo $hello['opt-icon-1']; ?>"></i>
                     </div>
-                    <h4>Quick Support</h4>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                    <div class="service-hover"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-
-                 <div class="col-md-4">
-                <div class="single-service">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h4>Web Development</h4>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                    <div class="service-hover"></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-service">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h4>Responsive Design</h4>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                    <h4><?php echo $hello['opt-text']; ?></h4>
+                    <p><?php echo $hello['opt-textarea']; ?></p>
                     <div class="service-hover"></div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="single-service">
-                    <div class="service-icon">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h4>WP Customization</h4>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                    <div class="service-hover"></div>
-                </div>
-            </div>
+            <?php
+            }
+     
+			?>
 
         </div>
+        
     </div>
 
     <!--Services Ends Here-->
