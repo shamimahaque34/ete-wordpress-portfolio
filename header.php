@@ -41,10 +41,11 @@
 
 <!--Header Starts Here-->
 <header>
-    <div class="container main-menu">
+    <div id="main-menu" class="container main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand logo" href="<?php home_url('/');?>">
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+          <?php  $options = get_option( 'my_framework' );?>
+        <img src="<?php echo $options['opt-upload-1']; ?>"  alt="" />
 <!--       <h2>Shamima Haque</h2>-->
         </a>
 

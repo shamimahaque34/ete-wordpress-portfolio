@@ -101,9 +101,9 @@ p{
   font-family:MavenPro-Regular;
 }
 
-.logged-in .main-menu{
+ .logged-in #main-menu{
     margin-top: 25px;
-}
+ }
 
 .page-title h3{
     float: left;

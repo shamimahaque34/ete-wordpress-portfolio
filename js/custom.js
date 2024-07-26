@@ -1,4 +1,5 @@
 //Testimonial JS Starts Here
+
 jQuery(document).ready(function(){
     jQuery("#testimonial-slider").owlCarousel({
         items:1,
