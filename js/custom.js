@@ -1,6 +1,6 @@
 //Testimonial JS Starts Here
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
+jQuery(document).ready(function(){
+    jQuery("#testimonial-slider").owlCarousel({
         items:1,
         itemsDesktop:[1000,2],
         itemsDesktopSmall:[979,1],
